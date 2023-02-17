@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/38911dae82.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()" style="color: black;"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()" style="color: black;"></i>
+            </nav>
+            <div class="header-text">
+                <p>Informatics Technology Student</p>
+                <h1>I'm <span>Jordan</span><br>From UKRIDA
+                    </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p style="text-align: justify; text-justify: inter-word;">I'm Jordan. An informatics technology student specialized in Web Programming, Android Programming, Database Analysis and graphics content design that engages, informs, and leaves lasting impressions!</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <hr style="color: #0EB29A;">
+                    <!-- Skills -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li style="text-align: justify; text-justify: inter-word;"><span>Web Programming</span>
+                                <br>Writing, markup and coding involved in Web development, which includes Web content, Web client and server scripting and network security.</li>
+                            <li style="text-align: justify; text-justify: inter-word;"><span>Android Software Development</span>
+                                <br>Process by which applications are created for devices running the Android operating system</li>
+                            <li style="text-align: justify; text-justify: inter-word;"><span>Graphic Design</span>
+                                <br>the art and practice of planning and projecting ideas and experiences with visual and textual content.</li>
+                        </ul>
+                    </div>
+                    <!-- Experience -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>OSIS SMA Bunga Hati Bangsa 2017</span><br>As Secretary</li>
+                            <li><span>BEM Universitas UKRIDA 2022</span><br>As Member</li>
+                            <li><span>UKM: Seni & Kreativitas UKRIDA 2022</span><br>As Room Manager</li>
+                            <li><span>Ikkudo Ichi Puri Indah Mall 2019</span><br>As Kitchen Assistant (Part Time)</li>
+                            <li><span>Indo Beauty Expo/Indo Health Care 2022</span><br>As Usher (Part Time)</li>
+                        </ul>
+                    </div>
+                    <!-- Education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SMA Bunga Hati Bangsa</span><br>2017 - 2020</li>
+                            <li><span>Krida Wacana Christian University (UKRIDA)</span><br>2020 - Now | GPA: 3.66</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p style="text-align: justify; text-justify: inter-word;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis doloremque, aliquid, quasi perferendis autem vero cumque sequi maxime deleniti corrupti temporibus. Id, commodi. Quae blanditiis maxime soluta odit, cum vel?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p style="text-align: justify; text-justify: inter-word;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis doloremque, aliquid, quasi perferendis autem vero cumque sequi maxime deleniti corrupti temporibus. Id, commodi. Quae blanditiis maxime soluta odit, cum vel?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa fa-android"></i>
+                    <h2>App Design</h2>
+                    <p style="text-align: justify; text-justify: inter-word;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis doloremque, aliquid, quasi perferendis autem vero cumque sequi maxime deleniti corrupti temporibus. Id, commodi. Quae blanditiis maxime soluta odit, cum vel?</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media Application</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from Playstore
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Social Media Application</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from Playstore
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Social Media Application</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from Playstore
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>jordan_yusack@yahoo.co.id</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+62 83872370395</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/jordanyussac/"><i class="fa fa-facebook"></i></a>
+                        <a href="www.instagram.com/jordanyussac"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="https://id.linkedin.com/in/jordan-yussac-haryanto-98a467232"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/CV Jordan Yussac Haryanto.pdf" download class="btn btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © by Jordan Yussac Haryanto || All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName('tab-contents')
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+
+    <script>
+
+        var sideMenu = document.getElementById("sideMenu");
+        function openMenu(){
+            sideMenu.style.right = "0"
+        }
+        function closeMenu(){
+            sideMenu.style.right = "-200px"
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzw_hnzrA6yjPF5oHcdz3I2v0PxzI0Me5w6fI0lSiWPRPo-Q1jWhRroccurBmt-Uc-CnQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
