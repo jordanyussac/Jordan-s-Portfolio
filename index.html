@@ -7,225 +7,381 @@
     <title>Jordan's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="images/icon.png">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <script src="https://kit.fontawesome.com/38911dae82.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.png" class="logo">
-                <ul id="sideMenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closeMenu()" style="color: black;"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openMenu()" style="color: black;"></i>
-            </nav>
-            <div class="header-text">
-                <p>Informatics Technology Student</p>
-                <h1>I'm <span>Jordan</span><br>From UKRIDA
-                    </h1>
-            </div>
-        </div>
-    </div>
 
-    <!-- About -->
-    <div id="about">
+    <!-- NAVBAR -->
+    <nav>
+        <div class="container nav-container">
+            <img src="images/logo.png" class="logo" alt="Jordan Logo">
+            <ul id="sideMenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openMenu()"></i>
+        </div>
+    </nav>
+
+    <header id="header">
+        <div class="hero">
+
+            <!-- LEFT SIDE -->
+            <div class="hero-left">
+                <p class="hero-tagline">JavaScript Web Developer</p>
+
+                <h1 class="hero-title">
+                    Hi, I'm <span>Jordan</span><br/>
+                    Full-Stack Developer
+                </h1>
+
+                <p class="hero-subtitle">
+                    I build responsive, dynamic web applications and internal tools using
+                    React.js, Node.js, Express, and SQL Server — turning ideas into real, working systems.
+                </p>
+
+                <!-- TECH STACK -->
+                <div class="tech-stack">
+                    <span>React.js</span> • 
+                    <span>Node.js</span> •
+                    <span>Express.js</span> •
+                    <span>SQL Server</span>
+                </div>
+
+                <!-- DEVELOPER STATS -->
+                <div class="hero-stats">
+                    <div><strong>2+</strong><span>Years Experience</span></div>
+                    <div><strong>10+</strong><span>Projects Built</span></div>
+                    <div><strong>Full-Stack</strong><span>Developer</span></div>
+                </div>
+
+                <!-- BUTTONS -->
+                <div class="hero-actions">
+                    <a href="#portfolio" class="btn primary-btn">View Projects</a>
+                    <a href="#contact" class="btn ghost-btn">Contact Me</a>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="hero-right">
+                <div class="hero-photo-wrapper big-hero-photo">
+                    <img src="images/hero.png" alt="Jordan Portrait">
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png">
+                    <img src="images/user.png" alt="Jordan">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About me</h1>
-                    <p style="text-align: justify; text-justify: inter-word;">I'm Jordan. An informatics technology student specialized in Web Programming, Android Programming, Database Analysis and graphics content design that engages, informs, and leaves lasting impressions!</p>
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-text">
+                        I am a JavaScript Web Developer specializing in building responsive and dynamic web applications.
+                        Experienced in full-stack development using React.js, Node.js, Express, SQL Server, and REST APIs.
+                        I also develop automation tools, desktop applications, and backend systems that support operational workflows.
+                        Passionate about clean UI, problem-solving, and delivering real results through technology.
+                    </p>
                     
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <hr style="color: #0EB29A;">
+                    <hr class="tab-divider">
+
                     <!-- Skills -->
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li style="text-align: justify; text-justify: inter-word;"><span>Web Programming</span>
-                                <br>HTML, CSS, JS, React.js</li>
-                            <li style="text-align: justify; text-justify: inter-word;"><span>Android Software Development</span>
-                                <br>Java</li>
-                            <li style="text-align: justify; text-justify: inter-word;"><span>Graphic Design</span>
-                                <br>Canva, Photoshop, Filmora</li>
+                            <li>
+                                <span>Frontend Development</span><br>
+                                HTML, CSS, JavaScript, React.js, Redux.js, Vite.js
+                            </li>
+                            <li>
+                                <span>Backend Development</span><br>
+                                Node.js, Express.js, REST API, SQL Server, PL/SQL
+                            </li>
+                            <li>
+                                <span>Tools & Others</span><br>
+                                Git, GitLab, Postman, Figma, Python App Packaging
+                            </li>
                         </ul>
                     </div>
+
                     <!-- Experience -->
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>OSIS SMA Bunga Hati Bangsa 2017</span><br>As Secretary (2017 - 2019)</li>
-                            <li><span>BEM Universitas UKRIDA 2022</span><br>As Member (2022 - 2023)</li>
-                            <li><span>UKM: Seni & Kreativitas UKRIDA 2022</span><br>As Room Manager (2022 - 2023)</li>
-                            <li><span>PT. Eskalink</span><br>As Mobile Developer Intern (Mar 2023 - Now)</li>
-                            <!-- <li><span>Ikkudo Ichi Puri Indah Mall 2019</span><br>As Kitchen Assistant (Part Time)</li>
-                            <li><span>Indo Beauty Expo/Indo Health Care 2022</span><br>As Usher (Part Time)</li> -->
+                            <li>
+                                <span>IT Programmer — PT Autorent Lancar Sejahtera (2024–Present)</span><br>
+                                Full-stack development using React, Node.js, Express, SQL Server.
+                                Developing Python desktop automation apps and internal REST APIs.
+                            </li>
+                            <li>
+                                <span>Human Resource Intern — UKRIDA (2023–2024)</span><br>
+                                HR data analysis, digital content creation, and engagement design.
+                            </li>
+                            <li>
+                                <span>Teaching Assistant — UKRIDA (2023–2024)</span><br>
+                                Assisted in teaching OOP Java, SQL database programming, and student projects.
+                            </li>
+                            <li>
+                                <span>Mobile & Web Developer Intern — PT Eskalink (2023)</span><br>
+                                Built Android & web applications using Flutter, JavaScript, React.js, and Node.js.
+                            </li>
+                            <li>
+                                <span>Python Programming Teacher — YSCK (2022)</span><br>
+                                Taught Python basics, logic building, and created teaching modules.
+                            </li>
                         </ul>
                     </div>
+
                     <!-- Education -->
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>SMA Bunga Hati Bangsa</span><br>2017 - 2020</li>
-                            <li><span>Krida Wacana Christian University (UKRIDA)</span><br>2020 - Now | GPA: 3.66</li>
+                            <li>
+                                <span>Krida Wacana Christian University (UKRIDA)</span><br>
+                                Bachelor of Informatics Engineering (2020–2024)
+                            </li>
+                            <li>
+                                <span>SMA Bunga Hati Bangsa</span><br>
+                                Science Major (2017–2020)
+                            </li>
                         </ul>
                     </div>
+
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Services -->
-    <div id="services">
+    <!-- SERVICES -->
+    <section id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
+            <p class="section-intro">
+                I help teams turn ideas into working systems — from frontend interfaces to backend automation.
+            </p>
             <div class="services-list">
                 <div>
                     <i class="fas fa-code"></i>
-                    <h2>Web Programming</h2>
-                    <p style="text-align: justify; text-justify: inter-word;">Writing, markup and coding involved in Web development, which includes Web content, Web client and server scripting and network security.</p>
-                    <!-- <a href="#">Learn More</a> -->
+                    <h2>Web Development</h2>
+                    <p>
+                        Building responsive and interactive web applications using modern JavaScript frameworks
+                        like React.js and clean component-driven architecture.
+                    </p>
                 </div>
                 <div>
-                    <i class="fa fa-android"></i>
-                    <h2>Android Software Development</h2>
-                    <p style="text-align: justify; text-justify: inter-word;">Process by which applications are created for devices running the Android operating system.</p>
-                    <!-- <a href="#">Learn More</a> -->
+                    <i class="fa fa-database"></i>
+                    <h2>Backend & API</h2>
+                    <p>
+                        Developing REST APIs, business logic, and database operations using Node.js, Express, and SQL Server.
+                    </p>
                 </div>
                 <div>
                     <i class="fas fa-pen"></i>
-                    <h2>Graphic Design</h2>
-                    <p style="text-align: justify; text-justify: inter-word;">The art and practice of planning and projecting ideas and experiences with visual and textual content.</p>
-                    <!-- <a href="#">Learn More</a> -->
+                    <h2>Tools & Internal Apps</h2>
+                    <p>
+                        Creating automation tools, Python desktop apps, and internal utilities to support daily operations.
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Portfolio -->
-    <div id="portfolio">
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
         <div class="container">
+
             <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-4.png" style="height: 100%; width: 100%;">
-                    <div class="layer">
-                        <h3>J-SUMZ</h3>
-                        <p>Summarize An Articles with OpenAI GPT-4
-                        </p>
-                        <a href="https://j-sumz.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+            <p class="section-intro">
+                A selection of personal projects showing how I learn, experiment, and solve problems.
+            </p>
+
+            <div class="portfolio-wrapper">
+
+                <!-- NAV BUTTONS (Hidden by default) -->
+                <button class="slide-btn left-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="slide-btn right-btn"><i class="fas fa-chevron-right"></i></button>
+                <div class="portfolio-track">
+
+                    <div class="work-card">
+                        <img src="images/work-4.png">
+                        <div class="layer">
+                            <h3>J-SUMZ</h3>
+                            <p>Article summarizer powered by OpenAI GPT-4.</p>
+                            <a href="https://j-sumz.netlify.app/" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-5.png">
-                    <div class="layer">
-                        <h3>J-Tube</h3>
-                        <p>The video player website provides seamless and user-friendly streaming experience for users to enjoy their favorite videos.
-                        </p>
-                        <a href="https://j-tube.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+
+                    <div class="work-card">
+                        <img src="images/work-5.png">
+                        <div class="layer">
+                            <h3>J-Tube</h3>
+                            <p>Minimalist video viewing platform.</p>
+                            <a href="https://j-tube.netlify.app/" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png">
-                    <div class="layer">
-                        <h3>Dynamic Portfolio with Next.js</h3>
-                        <p>A dynamic portfolio built with Next.js allows for fast, efficient, and seamless rendering of content.
-                        </p>
-                        <a href="https://jordan-yussac.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+
+                    <div class="work-card">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Next.js Portfolio</h3>
+                            <p>Dynamic portfolio built using Next.js.</p>
+                            <a href="https://jordan-yussac.netlify.app/" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
                     </div>
+
                 </div>
             </div>
-            <a href="#portfolio" class="btn">See More</a>
-        </div>
-    </div>
 
-    <div id="contact">
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
         <div class="container">
-            <div class="row">
+            <div class="row contact-wrapper">
+
+                <!-- LEFT SIDE -->
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i>jordan_yusack@yahoo.co.id</p>
-                    <p><i class="fas fa-phone-square-alt"></i>+62 83872370395</p>
+
+                    <p><i class="fas fa-paper-plane"></i> jordan_yusack@yahoo.co.id</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +62 83872370395</p>
+
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/jordanyussac/"><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/jordanyussac/"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="https://id.linkedin.com/in/jordan-yussac-haryanto-98a467232"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/jordanyussac/" target="_blank" rel="noopener">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/jordanyussac/" target="_blank" rel="noopener">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="https://id.linkedin.com/in/jordan-yussac-haryanto-98a467232" target="_blank" rel="noopener">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
                     </div>
-                    <a href="images/CV Jordan Yussac Haryanto.pdf" download class="btn btn">Download CV</a>
+
+                    <a href="images/CV Jordan Yussac Haryanto - IT Programmer.pdf" download class="btn primary-btn">
+                        Download CV
+                    </a>
                 </div>
+
+                <!-- RIGHT SIDE - FORM -->
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn">Submit</button>
+
+                        <button type="submit" class="btn primary-btn">Submit</button>
                     </form>
-                    <span id="msg">
-                    </span>
+
+                    <span id="msg"></span>
                 </div>
+
             </div>
         </div>
-        <div class="copyright">
-            <p>Copyright © by Jordan Yussac Haryanto || All Rights Reserved</p>
-        </div>
+
+    </section>
+
+    <div class="copyright">
+        <p>Copyright © by Jordan Yussac Haryanto || All Rights Reserved</p>
     </div>
 
+    <!-- TAB SCRIPT -->
     <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName('tab-contents')
-        function opentab(tabname){
-            for(tablink of tablinks){
+        const tablinks = document.getElementsByClassName("tab-links");
+        const tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
-            for(tabcontent of tabcontents){
+            for (let tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-
-
     </script>
 
+    <!-- MENU SCRIPT -->
     <script>
+        const sideMenu = document.getElementById("sideMenu");
 
-        var sideMenu = document.getElementById("sideMenu");
-        function openMenu(){
-            sideMenu.style.right = "0"
-        }
-        function closeMenu(){
-            sideMenu.style.right = "-200px"
+        function openMenu() {
+            sideMenu.style.right = "0";
         }
 
+        function closeMenu() {
+            sideMenu.style.right = "-220px";
+        }
     </script>
 
+    <!-- GOOGLE SHEET FORM SCRIPT (opsional; pakai punyamu yang lama) -->
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzw_hnzrA6yjPF5oHcdz3I2v0PxzI0Me5w6fI0lSiWPRPo-Q1jWhRroccurBmt-Uc-CnQ/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzw_hnzrA6yjPF5oHcdz3I2v0PxzI0Me5w6fI0lSiWPRPo-Q1jWhRroccurBmt-Uc-CnQ/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
 
         form.addEventListener('submit', e => {
-            e.preventDefault()
-                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => {
-                    msg.innerHTML = "Message Sent Successfully"
-                    setTimeout(function(){
-                        msg.innerHTML = ""
-                    }, 5000)
-                    form.reset()
+                    msg.innerHTML = "Message sent successfully!";
+                    setTimeout(() => { msg.innerHTML = ""; }, 5000);
+                    form.reset();
                 })
-                .catch(error => console.error('Error!', error.message))
-        })
+                .catch(error => console.error('Error!', error.message));
+        });
     </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const track = document.querySelector(".portfolio-track");
+            const cards = document.querySelectorAll(".work-card");
+            const btnLeft = document.querySelector(".left-btn");
+            const btnRight = document.querySelector(".right-btn");
+
+            // IF ITEMS > 3 → ENABLE SLIDER MODE
+            if (cards.length > 3) {
+                track.classList.add("slider-enabled");
+
+                btnLeft.style.display = "flex";
+                btnRight.style.display = "flex";
+
+                btnLeft.onclick = () => track.scrollBy({ left: -320, behavior: "smooth" });
+                btnRight.onclick = () => track.scrollBy({ left: 320, behavior: "smooth" });
+
+            } else {
+                // GRID MODE
+                track.classList.remove("slider-enabled");
+                btnLeft.style.display = "none";
+                btnRight.style.display = "none";
+            }
+
+        });
+    </script>
+
+
+
+
 </body>
 </html>
